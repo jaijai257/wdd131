@@ -4,16 +4,21 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>WDD 131 – Dynamic Web Fundamentals</title> 
-        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Jeffrey Ohaegbulem Uchechi Chijiokem. Explore the concepts of HTML, CSS, JavaScript."> 
+        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Jeffrey Ohaegbulem Uchechi Chijiokem. Explore my LinkedIn, scripture, canvas, and final Project"> 
         <meta name="author" content="Jeffrey Ohaegbulem Uchechi Chijiokem"> 
         <link rel="stylesheet" href="styles/base.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="scripts/getdates.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     </head>
 <body>
     <header>
-        <h1></h1>
+        <div class="headerContent">
+            <h1> WDD 131: Dynamic Web Fundamentals -
+                 <span class="highlight">Jeffrey Ohaegbulem</span>
+            </h1>
+        </div>
         <nav>
             <a href="http://">LinkedIn</a>
             <a href="http://byupw.instructure.com/">Canvas</a>
@@ -23,24 +28,53 @@
     </header>
     <div class="grid">
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>My name is Jeffrey but my friends call me jeff not all of them tho😅. I am from Nigeria also known as the giant of africa🌍 and i live in lagos with my family. I have two brothers and a sister but i am the second born while my sister is the third born, even though she is the third we treat her like the last only because she's the only girl😁. I love playing basketball🏀, football⚽ and many more, I am a gadget and car freak😅 so most of my time i use it in searching for gadgets and also learning coding because i really love coding, most people tell me it's hard, well, it is actually😝 but i still find it fun, ooh and i also love playing games😁.   </p>
-            
+        <section class="card me">
+            <div class="aboutMe">
+               <h2>About Me</h2>
+            </div>
+            <div class="aboutMeDiv">
+                <div class="aboutMeColumn">
+                   <p>My name is Jeffrey but my friends call me jeff not all of them tho😅. I am from Nigeria also known as the giant of africa🌍 and i live in lagos with my family. I have two brothers and a sister but i am the second born while my sister is the third born, even though she is the third we treat her like the last only because she's the only girl😁. I love playing basketball🏀, football⚽ and many more, I am a gadget and car freak😅 so most of my time i use it in searching for gadgets and also learning coding because i really love coding, most people tell me it's hard, well, it is actually😝 but i still find it fun, ooh and i also love playing games😁. </p>
+                   <div class="countryInfo">
+                      <h3 class="countryHeader">Nigeria, Africa</h3>
+                      <hr>
+                      <div class="aboutNigeria">
+                            <div class="flag">
+                              <img src="images/nigeriaFlag.webp" alt="nigeria flag" width="150">
+                              <p>official Nigeria Flag</p>
+                            </div>
+                            <P>Nigeria is located at the west side of africa🌍, and it is the most populous country in the whole of africa. Nigeria is also known for it natural resources such as crude oil, minerals and natural gas. Abuja is the capital of Nigeria, while lagos is the largest city in the whole of Nigeria.</P>
+                      </div>                      
+                    </div> 
+                </div>
+                 <img src="images/jeff.webp" alt="about me" width="150">
+            </div>
         </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <p>Learn about the Document Object Model (DOM).</p>
+        <section class="card Resources">
+            <div class="aboutMe">
+               <h2>Web Dev Resources</h2>
+            </div>
+           <div class="resourcesLi">
+                <ul>
+                    <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                    <li><a href="https://www.codecademy.com/?g_network=g&g_productchannel=&g_adid=624951457618&g_locinterest=&g_keyword=codecademy&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-41065460761&g_ifcreative=&g_campaign=account&g_locphysical=9073717&g_adgroupid=70492864474&g_productid=&g_source={sourceid}&g_merchantid=&g_placement=&g_partition=&g_campaignid=1726903838&g_ifproduct=&utm_id=t_kwd-41065460761:ag_70492864474:cp_1726903838:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=codecademy&utm_campaign=INTL_Brand_Exact&utm_content=624951457618&g_adtype=search&g_acctid=243-039-7011&gad_source=1&gclid=Cj0KCQiA8q--BhDiARIsAP9tKI1hUoeAtv5PZg5aye8YvDI0uU1p0V_eAudfvhN7t5cwnltz9VhNKqcaAlmEEALw_wcB">codecademy</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/">geeksforgeeks</a></li>
+                    <li><a href="https://github.com/">github</a></li>
+                    <li><a href="https://www.coursera.org//">coursera</a></li>
+                    <li><a href="https://www.udemy.com/?srsltid=AfmBOooomvsiwbGr6fnm7nF4mwNWgzh5ce3yC7IiAmqq29eZ07yNkIKM">Udemy</a></li>
+                </ul>
+            </div>   
+          
         </section>
     
     </main>
     </div>
     <footer>
-        <p>
-            ©<span id="currentyear"></span> ⚡Jeffrey Ohaegbulem Uchechi Chijiokem, Nigeria.⚡ </p>
-        <p id="lastmodified"> 
-
-        </p>
+        <p >
+            ©<span id="currentyear"></span>  
+             ⚡Jeffrey Ohaegbulem Uchechi Chijiokem, Nigeria.⚡
+            </p>
+        <p id="lastmodified"></p>
         
     </footer>
 </body>
