@@ -17,7 +17,7 @@ header{
     padding: 10px 0;
 }
 header h1{
-    margin: ;
+    margin: 0;
     font-family: var(--font-family);
 }
 nav{
@@ -42,7 +42,6 @@ nav a{
     text-decoration: none;
     margin: 0 1em;
     display: flex;
-    align-items: right;
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
@@ -66,7 +65,7 @@ img{
 }
 .grid-temple {
     display: grid;
-    grid-template-columns: 1 / 3;
+    grid-template-columns: 1fr  3fr;
     gap: 10px;
     padding: 20px;
 }
