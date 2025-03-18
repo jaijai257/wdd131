@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
     nav ul {
-        display: flex; /* Show menu on larger screens */
+        display: flex; 
     }
 
     .grid-temple {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     }
 }
