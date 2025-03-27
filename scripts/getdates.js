@@ -27,5 +27,4 @@ function displayWindChill() {
     }
 }
 
-// Initialize page when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', displayWindChill);
