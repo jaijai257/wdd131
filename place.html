@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals</title> 
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Jeffrey Ohaegbulem Uchechi Chijiokem. Explore my LinkedIn, scripture, canvas, and final project."> 
+    <meta name="author" content="Jeffrey Ohaegbulem"> 
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Scenic view of Nigeria" width="500px" height="250px">
+            </picture>
+        </div>
+            <section class="data">
+                <h2>Data</h2>
+                <p class="label">Area:</p>
+                <p class="value">923,768 Sq Km</p>
+                <p class="label">Population:</p>
+                <p class="value">223,804,632</p>
+                <p class="label">Capital:</p>
+                <p class="value">Abuja</p>
+                <p class="label">Languages:</p>
+                <p class="value">English, Hausa, Yoruba, Igbo, and others</p>
+                <p class="label">Currency:</p>
+                <p class="value">Naira</p>
+                <p class="label">Time Zone:</p>
+                <p class="value">UTC+1</p>
+                <p class="label">Calling Code:</p>
+                <p class="value">+234</p>
+                <p class="label">Internet TLD:</p>
+                <p class="value">.ng</p>
+        
+            </section>
+        
+
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <div class="weatherinfo">
+                <p>Temperature: <span id="temperature">28</span>°C</p>
+                <p>Condition: <span id="condition">Sunny</span></p>
+                <p>Wind Speed: <span id="wind-speed">6</span> km/h</p>
+                <p class="wind-chill">Wind Chill: </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© <span id="currentYear">2025</span> ♦️ Jeffrey Ohaegbulem ♦️</p>
+        <p id="lastModified">
+            <span class="highlight">Last Modification: </span> 
+        </p>
+    </footer>
+</body>
+</html>

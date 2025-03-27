@@ -1,0 +1,38 @@
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row; 
+    }
+    .grid-temple {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    }
+    h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+    .navigation.open{
+        display: flex;
+    }
+	.stuff {
+		margin: 1rem auto;
+	}
+
+}

@@ -1,0 +1,146 @@
+*{
+    --body-background-color: #d3d3d3;
+    --header-background-color: #333;
+    --font-family: Poppins sans-serif;
+    --font-size: 1.4em;
+    --color: white
+}
+body{
+    background-color: var(--body-background-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--header-background-color);
+    color: var(--color);
+    padding: 10px 0;
+}
+header h1{
+
+    font-family: var(--font-family);
+}
+nav{
+    background-color: var(--header-background-color);
+    padding: 0;
+    align-items: center;
+    margin: 0;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    right: 1em;
+    top: 2.1em;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    color: var(--color);
+    text-decoration: none;
+    margin: 0 1em;
+    display: block;
+    align-items: right;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+nav a:hover{
+    background-color: #3f3838;
+}
+h2{
+    font-family: var(--font-family);
+    color: #333;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";
+ }
+.stuff {
+    margin: .5rem;
+    border: 1px solid rgb(0 0 0 / .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;    
+    }
+
+main{
+    margin: 1em;
+    padding: 1em;
+}   
+img{
+    width: 100%;
+    height: auto;
+}
+.grid-temple {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 20px;
+}
+figure{
+    margin: 1em 1em 2em 1em;
+    text-align: center;
+}
+p{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+.span p{
+    color: coral;
+}
+footer{
+    background-color: var(--header-background-color);
+    color: var(--color);
+    padding: 1em;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
