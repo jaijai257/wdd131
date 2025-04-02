@@ -19,6 +19,7 @@ header{
 header h1{
 
     font-family: var(--font-family);
+    
 }
 nav{
     background-color: var(--header-background-color);
@@ -121,9 +122,21 @@ img{
 }
 .grid-temple {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 20px;
+}
+.grid-temple section {
+    background: rgb(233, 230, 230);
+    padding: 1rem;
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-temple img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 figure{
     margin: 1em 1em 2em 1em;
@@ -136,6 +149,7 @@ p{
 .span p{
     color: coral;
 }
+
 footer{
     background-color: var(--header-background-color);
     color: var(--color);
@@ -143,4 +157,19 @@ footer{
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size);
+}
+@media screen and (max-width: 768px){
+    .grid-temple {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .navigation{
+        display: flex;
+    }
+    
 }
