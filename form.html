@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals</title> 
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Jeffrey Ohaegbulem Uchechi Chijiokem. Explore my LinkedIn, scripture, canvas, and final Project"> 
+    <meta name="author" content="Jeffrey Ohaegbulem assignment Project"> 
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Product Review</h2>
+    </header>
+    <main>
+        <form id="reviewForm" action="review.html" method="get" class="product-review-form">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <label>Overall Rating:</label>
+            <div id="rating">
+                <label>
+                    <input type="radio" name="rating" value="1" required> ☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2" required> ☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3" required> ☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4" required> ☆☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5" required> ☆☆☆☆☆
+                </label>
+            </div>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <div></div>
+                Which feature did you find useful in this products?
+                <span class="italic-text">(Check all that apply) </span>
+                <label>
+                    <input type="checkbox" id="design" name="design" value="Design"> Design
+                </label>
+                <label>
+                    <input type="checkbox" id="durability" name="durability" value="Durability"> Durability
+                </label>
+                <label>
+                    <input type="checkbox" id="feature3" name="Ease of Use" value="Ease of Use"> Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" id="Perfomance" name="Perfomance" value="Perfomance"> Perfomance
+                </label>
+            </div>
+
+            <label for="writtenReview">Written Review</label>
+            <textarea id="writtenReview" name="writtenReview" rows="10" cols="50"></textarea>
+
+            <label for="userName">User  Name:</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p >
+            ©<span id="currentYear">2025</span>  
+             ⚡Jeffrey Ohaegbulem Uchechi Chijiokem, Nigeria.⚡</p>
+        <p id="lastModified">
+            <span class="highlight">Last Modification: </span>
+        </p>
+    </footer>
+</body>
+</html>
