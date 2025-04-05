@@ -18,7 +18,7 @@ body {
     padding: 0;
 }
 
-header h2{
+header h1{
     background: var(--header-background-color);
     color: var(--header-text-color);
     padding: 0;
