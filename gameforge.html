@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameForge | Home</title>
+  <meta name="description" content="Explore the latest in gaming gear, reviews, and community content with GameForge. Stay ahead in the world of gaming."> 
+  <meta name="author" content="Jeffrey Ohaegbulem"> 
+  <link rel="stylesheet" href="styles/gameforge.css">
+  <script src="scripts/gameforge.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>GameForge</h1>
+    <button id="menu" class="menu-btn">☰</button>
+    <nav>
+      <ul>
+        <li><a href="gameforge.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Explore Gaming Gear Like Never Before</h2>
+      <picture>
+        <source srcset="images/setup-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/setup-medium.webp" media="(min-width: 600px)">
+        <img src="images/setup-small.webp" alt="Gaming setup" loading="lazy" width="100%" />
+      </picture>
+    </section>
+
+    <div class="content">
+      <section class="featured">
+        <h3>Featured Reviews</h3>
+        <div class="articles-grid">
+          <article>
+            <h4>Top 5 Gaming Laptops of 2025</h4>
+            <img src="images/gamingsetup.webp" alt="gaming setup" width="400" style="max-width: 100%; border-radius: 10px;">
+            <p>Discover the best gaming laptops that combine power and portability.</p>
+            <a href="reviews.html">Read more</a>
+          </article>
+          <article>
+            <h4>Ultimate Gaming Headsets</h4>
+            <img src="images/alienware.webp" alt="Gaming headset" width="400" style="max-width: 100%; border-radius: 10px;">
+            <p>Experience immersive sound with our top picks for gaming headsets.</p>
+            <a href="reviews.html">Read more</a>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="newsletter">
+      <h3>Join the Forge!</h3>
+      <form id="subscribeForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <button type="submit" form="subscribeForm">Subscribe</button>
+      </form>
+      <p>Stay updated with the latest gaming news, reviews, and exclusive content!</p>
+      <p>Join our mailing list and get the latest gaming news, expert reviews, and pro-level tips delivered straight to your inbox every week!<br>
+      Each week, one lucky subscriber will also get personalized game recommendations and exclusive access to early content drops from our team of dedicated gamers and tech enthusiasts!</p>
+    </section>
+
+    <section class="social-media">
+      <h3>Follow Us</h3>
+      <p>Stay connected with us on social media for the latest updates and community events!</p>
+      <ul>
+        <li><a href="https://www.facebook.com/GameForge" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com/GameForge" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/GameForge" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section class="about-gameforge">
+      <h3>Welcome to GameForge</h3>
+      <p>GameForge is a premier gaming hub, where enthusiasts can dive into the latest gaming gear, in-depth reviews, and community updates. Our site is designed to keep you informed about cutting-edge technology and trends in the gaming world. Explore comprehensive reviews that help you make informed purchasing decisions, and stay connected with fellow gamers through our interactive platform. Share your thoughts, experiences, and tips with a vibrant community that shares your passion for gaming. Join us to elevate your gaming experience and stay ahead of the curve!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <span id="currentYear">2025</span> 
+       GameForge. All rights reserved.</p>
+    <p id="lastModified">
+      <span class="highlight">Last Modification: </span>
+    </p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>
